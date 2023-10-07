@@ -1,0 +1,10 @@
+.slider {
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.buttonNext::after,
+.buttonPrev::after {
+  color: #fff;
+  font-size: 30px !important;
+}

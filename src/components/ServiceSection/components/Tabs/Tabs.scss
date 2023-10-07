@@ -1,0 +1,82 @@
+.slider {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.slide {
+  display: inline;
+  width: auto;
+  height: auto;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  background-color: #ffffff20;
+  padding: 10px 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tab {
+  display: block;
+  text-decoration: none;
+  background-color: #ffffff20;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+
+  transition: 0.3s all;
+}
+
+.tab:hover {
+  background-color: #ffffff50;
+}
+
+.tab.active {
+  background-color: #fff;
+  color: #010104;
+}
+
+.circles {
+  padding: 0 10px;
+  display: flex;
+  gap: 4px;
+}
+
+.circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+
+  &.red {
+    background-color: rgba(203, 6, 6, 0.8);
+  }
+
+  &.gray {
+    background-color: #666;
+  }
+
+  &.green {
+    background-color: green;
+  }
+}
+
+.content {
+  background-color: #ffffff30;
+  padding: 10px;
+}
+
+.buttonWrapper {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .circles {
+    display: none;
+  }
+}

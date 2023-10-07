@@ -1,0 +1,85 @@
+.slider {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.slide {
+  display: inline;
+  width: auto;
+  height: auto;
+}
+
+.tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1254901961);
+  padding: 10px 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tab {
+  display: block;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1254901961);
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.tab:hover {
+  background-color: rgba(255, 255, 255, 0.3137254902);
+}
+
+.tab.active {
+  background-color: #fff;
+  color: #010104;
+}
+
+.circles {
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+}
+
+.circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+.circle.red {
+  background-color: rgba(203, 6, 6, 0.8);
+}
+.circle.gray {
+  background-color: #666;
+}
+.circle.green {
+  background-color: green;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.1882352941);
+  padding: 10px;
+}
+
+.buttonWrapper {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .circles {
+    display: none;
+  }
+}
