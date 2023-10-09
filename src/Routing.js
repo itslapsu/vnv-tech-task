@@ -6,7 +6,7 @@ import Layout from "./components/Layout/Layout";
 const Routing = () => {
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route path="vnv-tech-task/" element={<Layout />}>
         <Route index element={<Home />} />
       </Route>
     </Routes>
