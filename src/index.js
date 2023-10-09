@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routing basename={process.env.PUBLIC_URL}></Routing>/>
+      <Routing></Routing>
     </BrowserRouter>
   </React.StrictMode>
 );
