@@ -1,11 +1,11 @@
 .section {
   position: fixed;
-  bottom: 0;
+  bottom: -1000px;
   left: 0;
   background: #01010490;
   width: 100%;
   z-index: 999;
-  transition: 0.3s opacity;
+  transition: 0.3s bottom;
   padding: 10px 0;
 }
 

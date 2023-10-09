@@ -3,7 +3,7 @@ import style from "./LeadMagnet.module.css";
 import Button from "../Button/Button";
 
 const LeadMagnet = () => {
-  const [isVisible, setIsVisible] = React.useState(true);
+  const [isVisible, setIsVisible] = React.useState(false);
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -27,7 +27,10 @@ const LeadMagnet = () => {
   }, []);
 
   return (
-    <div style={{ opacity: isVisible ? "1" : "0" }} className={style.section}>
+    <div
+      style={{ bottom: isVisible ? "0" : "-1000px" }}
+      className={style.section}
+    >
       <div className="container">
         <div className={style.content}>
           <p className={style.text}>Знижка на перше замовлення!</p>

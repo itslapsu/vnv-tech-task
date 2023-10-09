@@ -1,12 +1,12 @@
 .section {
   position: fixed;
-  bottom: 0;
+  bottom: -1000px;
   left: 0;
   background: rgba(1, 1, 4, 0.5647058824);
   width: 100%;
   z-index: 999;
-  -webkit-transition: 0.3s opacity;
-  transition: 0.3s opacity;
+  -webkit-transition: 0.3s bottom;
+  transition: 0.3s bottom;
   padding: 10px 0;
 }
 
