@@ -25,7 +25,7 @@ const Header = () => {
     e.preventDefault();
 
     setIsActive(false);
-    document.body.style.overflow = `${isActive ? "auto" : "hidden"}`;
+    document.body.style.overflow = "auto";
 
     scroller.scrollTo(element, {
       duration: 800,
