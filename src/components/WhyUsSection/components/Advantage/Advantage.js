@@ -10,7 +10,7 @@ const Advantage = ({ children, icon, right }) => {
       transition={{ delay: 0.1 }}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true }}
+      viewport={{ once: false }}
       className={style.item}
     >
       <img class={style.icon} src={icon} alt="" />

@@ -1,5 +1,8 @@
+.background {
+  background: #221f28;
+}
+
 .section {
-  padding: 40px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,10 +13,29 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
   width: 100%;
+  padding: 30px 0;
 }
 
-.sliderWrapper {
+.question {
+  width: 100%;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: #313133;
+}
+
+.answer {
+  width: 100%;
+  padding: 20px;
+  background-color: #3d3d40;
+  border: 3px solid #313133;
+}
+
+.question:hover {
+  cursor: pointer;
+}
+
+.accordion {
+  margin-top: 20px;
   width: 100%;
 }

@@ -15,9 +15,11 @@ import adv6 from "../../assets/img/why6.webp";
 import { SwiperSlide } from "swiper/react";
 import Advantage from "./components/Advantage/Advantage";
 
+import { Element } from "react-scroll";
+
 const WhyUs = () => {
   return (
-    <div className="container">
+    <Element name="WhyUsSection" className="container">
       <div className={style.section}>
         <Title>/ Чому ми?</Title>
         <div className={style.content}>
@@ -73,7 +75,7 @@ const WhyUs = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Element>
   );
 };
 

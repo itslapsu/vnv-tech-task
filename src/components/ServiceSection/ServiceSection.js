@@ -7,9 +7,15 @@ import BackgroundVideo from "../HeroSection/components/BackgroundVideo/Backgroun
 import Video from "../../assets/video/service-section-video.webm";
 import Tabs from "./components/Tabs/Tabs";
 
+import { Element } from "react-scroll";
+
 const ServiceSection = () => {
   return (
-    <div className="container" style={{ position: "relative" }}>
+    <Element
+      name="ServicesSection"
+      className="container"
+      style={{ position: "relative" }}
+    >
       <BackgroundVideo video={Video} />
       <div className={style.section}>
         <Title>/ Послуги</Title>
@@ -21,7 +27,7 @@ const ServiceSection = () => {
         </div>
         <Tabs />
       </div>
-    </div>
+    </Element>
   );
 };
 

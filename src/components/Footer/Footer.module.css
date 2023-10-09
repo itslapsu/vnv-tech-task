@@ -1,0 +1,61 @@
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.email,
+.geo {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.email {
+  font-size: 22px;
+}
+
+.email:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.geo:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.socials {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.img {
+  width: 32px;
+  height: 32px;
+}

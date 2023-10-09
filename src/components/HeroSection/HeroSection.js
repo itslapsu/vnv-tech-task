@@ -8,6 +8,8 @@ import { motion } from "framer-motion";
 import rightAnimate from "../../assets/animate/rightAnimate";
 import { ReactComponent as ScrollDown } from "../../assets/img/scroll-down.svg";
 
+import { scroller } from "react-scroll";
+
 const Hero = () => {
   return (
     <>
@@ -36,14 +38,25 @@ const Hero = () => {
               Ми пропонуємо багато послуг, які виконують наші професіонали.
             </motion.p>
             <motion.div transition={{ delay: 0.8 }} variants={rightAnimate}>
-              <Button animate>Замовити</Button>
+              <Button scrollTo="BriefSection" animate>
+                Замовити
+              </Button>
             </motion.div>
             <motion.div
               transition={{ delay: 1 }}
               variants={rightAnimate}
               className={style.scrollDownBlock}
             >
-              <ScrollDown className={style.scrollDown} />
+              <ScrollDown
+                onClick={() => {
+                  scroller.scrollTo("WhyUsSection", {
+                    duration: 800,
+                    delay: 0,
+                    smooth: "easeInOutQuart",
+                  });
+                }}
+                className={style.scrollDown}
+              />
             </motion.div>
           </motion.div>
         </div>

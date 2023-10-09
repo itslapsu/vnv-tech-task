@@ -1,0 +1,34 @@
+.background {
+  background: #221f28;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.question {
+  width: 100%;
+  padding: 20px;
+  margin-top: 10px;
+  background-color: #313133;
+}
+
+.answer {
+  width: 100%;
+  padding: 20px;
+  background-color: #3d3d40;
+  border: 3px solid #313133;
+}
+
+.question:hover {
+  cursor: pointer;
+}
+
+.accordion {
+  margin-top: 20px;
+  width: 100%;
+}

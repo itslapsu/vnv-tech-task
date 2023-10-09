@@ -98,7 +98,7 @@ const Tabs = () => {
       >
         {tabs[activeTab].component}
         <div className={style.buttonWrapper}>
-          <Button>Хочу</Button>
+          <Button scrollTo="BriefSection">Хочу</Button>
         </div>
       </motion.div>
     </div>

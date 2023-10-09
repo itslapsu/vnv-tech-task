@@ -1,14 +1,7 @@
 import React, { useState } from "react";
 import style from "./Burger.module.css";
 
-const Burger = ({ setMenuIsActive }) => {
-  const [isActive, setIsActive] = useState(false);
-
-  const handleBurgerClick = () => {
-    setIsActive(!isActive);
-    setMenuIsActive(!isActive);
-  };
-
+const Burger = ({ isActive, handleBurgerClick }) => {
   return (
     <div
       className={`${style.burger} ${isActive ? style.active : ""}`}

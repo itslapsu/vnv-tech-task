@@ -13,7 +13,7 @@ const ProjectItem = ({ image, url, children }) => {
       transition={{ delay: 0.1 }}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true }}
+      viewport={{ once: false }}
       className={style.item}
     >
       <img className={style.img} src={image} alt="" />

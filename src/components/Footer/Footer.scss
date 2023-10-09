@@ -1,0 +1,44 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.email,
+.geo {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.email {
+  font-size: 22px;
+}
+
+.email:hover {
+  transform: scale(1.1);
+}
+
+.geo:hover {
+  transform: scale(1.4);
+}
+
+.socials {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.img {
+  width: 32px;
+  height: 32px;
+}

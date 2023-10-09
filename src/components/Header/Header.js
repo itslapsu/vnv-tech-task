@@ -10,8 +10,29 @@ import leftAnimate from "../../assets/animate/leftAnimate";
 import rightAnimate from "../../assets/animate/rightAnimate";
 import Button from "../Button/Button";
 
+import { scroller } from "react-scroll";
+
 const Header = () => {
-  const [menuIsActive, setMenuIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(false);
+
+  const handleBurgerClick = () => {
+    setIsActive(!isActive);
+
+    document.body.style.overflow = `${isActive ? "auto" : "hidden"}`;
+  };
+
+  const scrollToElement = (e, element) => {
+    e.preventDefault();
+
+    setIsActive(false);
+    document.body.style.overflow = `${isActive ? "auto" : "hidden"}`;
+
+    scroller.scrollTo(element, {
+      duration: 800,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    });
+  };
 
   return (
     <motion.header
@@ -23,13 +44,16 @@ const Header = () => {
       <motion.div transition={{ delay: 0.2 }} variants={leftAnimate}>
         <Logo />
       </motion.div>
-      <div className={`${style.buttons} ${menuIsActive ? style.active : ""}`}>
-        <Nav />
+      <div className={`${style.buttons} ${isActive ? style.active : ""}`}>
+        <Nav
+          handleBurgerClick={handleBurgerClick}
+          scrollToElement={scrollToElement}
+        />
         <motion.div transition={{ delay: 0.7 }} variants={rightAnimate}>
-          <Button>Замовити</Button>
+          <Button scrollTo="BriefSection">Замовити</Button>
         </motion.div>
       </div>
-      <Burger setMenuIsActive={setMenuIsActive} />
+      <Burger isActive={isActive} handleBurgerClick={handleBurgerClick} />
     </motion.header>
   );
 };
