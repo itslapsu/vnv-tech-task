@@ -2,7 +2,8 @@ import React from "react";
 import style from "./HeroSection.module.css";
 import BackgroundVideo from "./components/BackgroundVideo/BackgroundVideo";
 import Button from "../Button/Button";
-import Video from "../../assets/video/hero-section-video.webm";
+import videoWebm from "../../assets/video/hero-section-video.webm";
+import videoMp4 from "../../assets/video/hero-section-video.mp4";
 
 import { motion } from "framer-motion";
 import rightAnimate from "../../assets/animate/rightAnimate";
@@ -14,7 +15,7 @@ const Hero = () => {
   return (
     <>
       <section className={style.section}>
-        <BackgroundVideo video={Video} />
+        <BackgroundVideo webm={videoWebm} mp4={videoMp4} />
         <div className="container">
           <motion.div
             variants={rightAnimate}

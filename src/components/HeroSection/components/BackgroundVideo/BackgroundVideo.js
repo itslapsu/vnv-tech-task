@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./BackgroundVideo.module.css";
 
-const BackgroundVideo = ({ video }) => {
+const BackgroundVideo = ({ webm, mp4 }) => {
   return (
     <>
       <video
@@ -12,7 +12,8 @@ const BackgroundVideo = ({ video }) => {
         muted
         playsInline
       >
-        <source src={video}></source>
+        <source src={webm}></source>
+        <source src={mp4}></source>
       </video>
       <div className={style.backgroundVideoWrapper}></div>
     </>
