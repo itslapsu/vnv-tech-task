@@ -1,6 +1,9 @@
 import React from "react";
 import style from "./FAQSection.module.css";
 
+import { motion } from "framer-motion";
+import rightAnimate from "../../assets/animate/rightAnimate";
+
 import {
   Accordion,
   AccordionItem,
@@ -15,7 +18,14 @@ const FAQSection = () => {
   return (
     <Element name="FAQSection" className={style.background}>
       <div className="container">
-        <div className={style.section}>
+        <motion.div
+          variants={rightAnimate}
+          transition={{ delay: 0.4 }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className={style.section}
+        >
           <Title>/ FAQ</Title>
           <Accordion className={style.accordion} allowZeroExpanded={true}>
             <AccordionItem>
@@ -59,7 +69,7 @@ const FAQSection = () => {
               </AccordionItemPanel>
             </AccordionItem>
           </Accordion>
-        </div>
+        </motion.div>
       </div>
     </Element>
   );
