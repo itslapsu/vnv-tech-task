@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/vnv-tech-task/static/css/main.d622b1a0.css",
-    "main.js": "/vnv-tech-task/static/js/main.41e225f5.js",
+    "main.css": "/vnv-tech-task/static/css/main.2754c761.css",
+    "main.js": "/vnv-tech-task/static/js/main.f544bd89.js",
     "static/media/hero-section-video.webm": "/vnv-tech-task/static/media/hero-section-video.ab7861230af3606796cd.webm",
     "static/media/bg1.jpeg": "/vnv-tech-task/static/media/bg1.74899e8fc3fc3aeb3ab2.jpeg",
     "static/media/why2.jpeg": "/vnv-tech-task/static/media/why2.109790ee0c4f3b168dbf.jpeg",
@@ -19,11 +19,11 @@
     "static/media/scroll-down.svg": "/vnv-tech-task/static/media/scroll-down.c93446f4f26904b1cf41e8d447096b97.svg",
     "static/media/insta.svg": "/vnv-tech-task/static/media/insta.9085773c5371c71ed35f0ac8191eef80.svg",
     "index.html": "/vnv-tech-task/index.html",
-    "main.d622b1a0.css.map": "/vnv-tech-task/static/css/main.d622b1a0.css.map",
-    "main.41e225f5.js.map": "/vnv-tech-task/static/js/main.41e225f5.js.map"
+    "main.2754c761.css.map": "/vnv-tech-task/static/css/main.2754c761.css.map",
+    "main.f544bd89.js.map": "/vnv-tech-task/static/js/main.f544bd89.js.map"
   },
   "entrypoints": [
-    "static/css/main.d622b1a0.css",
-    "static/js/main.41e225f5.js"
+    "static/css/main.2754c761.css",
+    "static/js/main.f544bd89.js"
   ]
 }
