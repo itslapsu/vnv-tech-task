@@ -1,8 +1,6 @@
 import React from "react";
 import style from "./Nav.module.css";
 
-import { scroller } from "react-scroll";
-
 import { motion } from "framer-motion";
 
 import rightAnimate from "../../../../assets/animate/rightAnimate";

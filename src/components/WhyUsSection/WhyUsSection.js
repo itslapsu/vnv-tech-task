@@ -71,7 +71,7 @@ const WhyUs = () => {
             </>
           </SliderComponent>
           <div className={style.buttonWrapper}>
-            <Button animate>Замовити</Button>
+            <Button scrollTo="BriefSection" animate>Замовити</Button>
           </div>
         </div>
       </div>
